@@ -47,6 +47,7 @@ public class AppTest {
     @Test public void testLunes() {
         v = new Venta(1, true);
         loadMandando();
+        System.out.println("Lunes: " + v.getTotal());
         assertTrue((v.getTotal() >= 276.72) && (v.getTotal() <= 276.76));
 //      assertTrue(v.getTotal() == 276.73975);
     }
@@ -54,6 +55,7 @@ public class AppTest {
     @Test public void testMartes() {
         v = new Venta(2, false);
         loadMandando();
+        System.out.println("Martes: " + v.getTotal());
         assertTrue((v.getTotal() >= 291.28) && (v.getTotal() <= 291.32));
 //      assertTrue(v.getTotal() == 291.305);
     }
@@ -61,6 +63,7 @@ public class AppTest {
     @Test public void testMiercoles() {
         v = new Venta(3, false);
         loadMandando();
+        System.out.println("Miercoles: " + v.getTotal());
         assertTrue((v.getTotal() >= 266.79) && (v.getTotal() <= 266.83));
 //      assertTrue(v.getTotal() == 266.8145);
     }
@@ -68,6 +71,7 @@ public class AppTest {
     @Test public void testJueves() {
         v = new Venta(4, false);
         loadMandando();
+        System.out.println("Jueves: " + v.getTotal());
         assertTrue((v.getTotal() >= 284.32) && (v.getTotal() <= 284.36));
 //      assertTrue(v.getTotal() == 284.345);
     }
@@ -75,6 +79,7 @@ public class AppTest {
     @Test public void testViernes() {
         v = new Venta(5, false);
         loadMandando();
+        System.out.println("Viernes: " + v.getTotal());
         assertTrue(v.getTotal() >= 254.55 && v.getTotal() <= 254.59);
 //      assertTrue(v.getTotal() == 254.57);
     }
@@ -82,6 +87,7 @@ public class AppTest {
     @Test public void testSabado() {
         v = new Venta(6, false);
         loadMandando();
+        System.out.println("Sabado: " + v.getTotal());
         assertTrue((v.getTotal() >= 291.28) && (v.getTotal() <= 291.33));
 //      assertTrue(v.getTotal() == 291.305);
     }
@@ -89,6 +95,7 @@ public class AppTest {
     @Test public void testDomingo() {
         v = new Venta(7, true);
         loadMandando();
+        System.out.println("Domingo: " + v.getTotal());
         assertTrue((v.getTotal() >= 276.72) && (v.getTotal() <= 276.76));
 //      assertTrue(v.getTotal() == 276.73975);
     }
